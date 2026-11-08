@@ -40,9 +40,6 @@ Construir um **agente desenvolvedor** próprio: um harness (instruções, skills
 
 ## Pessoas
 - Vítor — responsável.
-- Edu — desenvolvimento em paralelo (citado no radar; confirmar papel).
-- Rafael — estratégia de licenças/roteamento (confirmar papel).
-
 ## Perguntas em aberto
 - [ ] Qual a stack-alvo do agente (Next.js/Vercel + Supabase? Go?)
 - [ ] Quais tarefas o agente deve fazer primeiro (review, testes, specs, refactor)?

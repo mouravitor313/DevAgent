@@ -33,6 +33,9 @@ Mantenha este arquivo curto: **cada regra nova deve vir de uma falha real** ("ra
 1. Criar/atualizar a nota em `02-Sessões/` (o que foi feito, decisões, próximos passos).
 2. Achados duráveis → `04-Conhecimento/` (ou atualizar a nota existente).
 3. Decisões tomadas → ADR em `01-Projeto/Decisões/`.
+
+## Decisões
+- **Toda decisão do Vítor é registrada no mesmo turno** em `01-Projeto/Decisões/Registro de decisões.md` (e em ADR, se estrutural), via skill `registro-de-decisoes`. Antes de apagar, mover ou mexer em um projeto, consulte o Registro (`grep` por escopo) e respeite as restrições vigentes. *(Origem: pedido do Vítor em 08/11/2026, DEC-2026-11-08-08.)*
 4. Pendências → seção "Próximos passos" do [[Roadmap]].
 
 ## Não faça

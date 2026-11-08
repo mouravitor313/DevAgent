@@ -10,8 +10,10 @@ Ponto de entrada do projeto **Estudos Dev Agent**. Regras do vault: [[AGENTS.md]
 
 ## Projeto
 - [[Kickoff]] · [[Roadmap]]
-- Decisões: [[ADR-0001 - Vault como memória do projeto]] · [[ADR-0002 - Claude Code CLI como ambiente principal]] (proposta)
-- Planos: [[Plano - Migração para agentes no terminal]]
+- Decisões: [[ADR-0001 - Vault como memória do projeto]] · [[ADR-0002 - Claude Code CLI como ambiente principal]] (proposta) · [[ADR-0003 - Organização da instalação Claude na máquina]]
+- **[[Registro de decisões]]** — índice de todas as decisões (consultar antes de agir)
+- Agente: skill [[Registro de decisões (skill)]] · catálogo de skills candidatas em `C:\Users\Pedro\.agents\skills-avaliacao\`
+- Planos: [[Plano - Migração para agentes no terminal]] · [[Inventário - Instalação Claude na máquina]]
 
 ## Fluxo das notas
 ```
@@ -45,6 +47,7 @@ Ponto de entrada do projeto **Estudos Dev Agent**. Regras do vault: [[AGENTS.md]
 ## Sessões
 - [[2026-11-08 - Kickoff do vault DevAgent]]
 - [[2026-11-08 - Ranking de ferramentas e plano de migração para o terminal]]
+- [[2026-11-08 - Inventário da instalação Claude]]
 
 ## Notas a ler / em construção (requer o plugin Bases ou Dataview para listas automáticas)
 - Busque no Obsidian por `status: a-ler` ou `status: em-construção`.

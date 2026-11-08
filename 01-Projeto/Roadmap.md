@@ -44,3 +44,11 @@ relacionados: ["[[Kickoff]]"]
 - [ ] Confirmar inscrições de newsletters pendentes (TLDR, AI/TLDR, Latent Space, Pragmatic Engineer)
 - [ ] Confirmar Qwen3-Coder-Next como candidato à camada barata
 - [ ] Apagar as pastas vazias `Desenvolvimento/` e `LLM/` na raiz do vault
+- [x] Decidir os 6 pontos do [[Inventário - Instalação Claude na máquina]] (§4) e executar a limpeza → [[ADR-0003 - Organização da instalação Claude na máquina]]
+- [ ] **Limpeza do `xend-baas-api`** quando não houver sessões ativas (DEC-2026-11-08-07): 27 worktrees mergeados, kit ECC versionado (899 arquivos, incluindo transcrições de terceiros), regra `/sdd-phase`, blocos do baas-api no `autoMode` do settings global
+- [ ] Commitar/abrir PR das remoções locais: ECC versionado em `XEND-RFQ-PORTAL` e `dashboard_xend`; regra `/sdd-phase` removida dos `CLAUDE.md`/`AGENTS.md` (onchain, hedglobal, RFQ, xendmm, dash-mm, dashboard_xend)
+- [ ] Remover o kit ECC do worktree `xend-onchain-binance-venue` (job interrompido por memória baixa em 08/11; `.claude` intacto)
+- [ ] Revisitar o MCP do Clerk (escopo local do `xend-baas-api`, DEC-2026-11-08-14): remover com `claude mcp remove clerk -s local` quando não for mais necessário, ou reavaliar após atualizar a CLI (3.3.0 → 4.1.0)
+- [ ] Avaliar as 117 skills de `~\.agents\skills-avaliacao\` (`_catalogo.json`) → quais entram no Dev Agent
+- [ ] Apagar os backups em `C:\Users\Pedro\arquivo-claude\2026-11-08\` depois de algumas semanas sem precisar deles
+- [ ] Limpar os registros de plugins de projeto órfãos (`hedglobal-plataform`: claude-mem e suíte claude-settings) e o cache do `claude-mem` (521 MB)
