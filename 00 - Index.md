@@ -10,9 +10,9 @@ Ponto de entrada do projeto **Estudos Dev Agent**. Regras do vault: [[AGENTS.md]
 
 ## Projeto
 - [[Kickoff]] · [[Roadmap]]
-- Decisões: [[ADR-0001 - Vault como memória do projeto]] · [[ADR-0002 - Claude Code CLI como ambiente principal]] (proposta) · [[ADR-0003 - Organização da instalação Claude na máquina]]
+- Decisões: [[ADR-0001 - Vault como memória do projeto]] · [[ADR-0002 - Claude Code CLI como ambiente principal]] (proposta) · [[ADR-0003 - Organização da instalação Claude na máquina]] · [[ADR-0004 - Stacks agnósticas e seção de Stacks modular]]
 - **[[Registro de decisões]]** — índice de todas as decisões (consultar antes de agir)
-- Agente: skill [[Registro de decisões (skill)]] · catálogo de skills candidatas em `C:\Users\Pedro\.agents\skills-avaliacao\`
+- Agente: **[[Stacks]]** (contexto, skills, docs, MCPs e plugins por stack · [[Tarefas transversais]]) · skill [[Registro de decisões (skill)]] · catálogo de skills candidatas em `C:\Users\Pedro\.agents\skills-avaliacao\`
 - Planos: [[Plano - Migração para agentes no terminal]] · [[Inventário - Instalação Claude na máquina]]
 
 ## Fluxo das notas

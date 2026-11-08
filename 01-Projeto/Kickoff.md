@@ -41,8 +41,7 @@ Construir um **agente desenvolvedor** próprio: um harness (instruções, skills
 ## Pessoas
 - Vítor — responsável.
 ## Perguntas em aberto
-- [ ] Qual a stack-alvo do agente (Next.js/Vercel + Supabase? Go?)
-- [ ] Quais tarefas o agente deve fazer primeiro (review, testes, specs, refactor)?
-- [ ] Orçamento mensal de tokens/licenças.
-- [ ] Onde o agente roda: local (Claude Code/OpenCode) ou serverless?
-  - Para o *nosso* trabalho no projeto: direção é usar o **Claude Code CLI** → [[ADR-0002 - Claude Code CLI como ambiente principal]].
+- [x] Qual a stack-alvo do agente? **Agnóstica** (Python, Go, TS, JS, Next, SQL e outras) → [[ADR-0004 - Stacks agnósticas e seção de Stacks modular]] · [[Stacks]] (DEC-2026-11-08-20/21)
+- [x] Quais tarefas o agente deve fazer primeiro? **Review, testes, specs, refactor, organização do workflow e gerenciamento de Git/GitHub** → [[Tarefas transversais]] (DEC-2026-11-08-22)
+- [ ] Orçamento mensal de tokens/licenças. **Provisório: ~R$ 2.000 para toda a equipe** (gasto atual), com a meta de reduzir; falta fechar (DEC-2026-11-08-23). O Claude do time é plano de time, não API.
+- [x] Onde o agente roda? **Local, no Claude Code e no OpenCode.** OpenCode já instalado, com modelos gratuitos para testar o harness (DEC-2026-11-08-24). Para o *nosso* trabalho no projeto: [[ADR-0002 - Claude Code CLI como ambiente principal]].
