@@ -40,8 +40,8 @@ Ponto de entrada do projeto **Estudos Dev Agent**. Regras do vault: [[AGENTS.md]
 - [[Uma Breve Introdução ao Desenvolvimento com LLMs]]
 
 ## Pesquisa recente
-- [[2026-11-08 - Radar Dev & IA (Ciclo 1)]] · [[2026-11-08 - Radar Dev & IA (Ciclo 2)]] · [[2026-11-08 - Radar Dev & IA (Ciclo 3)]]
-- Papers: [[LLMRouter (paper)]] · [[LLMRouterBench (paper)]]
+- [[2026-11-09 - Radar Dev & IA]] · [[2026-11-08 - Radar Dev & IA (Ciclo 1)]] · [[2026-11-08 - Radar Dev & IA (Ciclo 2)]] · [[2026-11-08 - Radar Dev & IA (Ciclo 3)]]
+- Papers: [[LLMRouter (paper)]] · [[LLMRouterBench (paper)]] · [[TwinRouterBench (paper)]]
 - Referências: [[Web3 and DeFi Research Agent]] · [[Ferramentas de organização e templates - ranking]]
 
 ## Sessões
