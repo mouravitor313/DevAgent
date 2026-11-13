@@ -6,6 +6,7 @@ criado: 2026-11-09
 atualizado: 2026-11-09
 ciclo: 1 (UTC, manhã de 09/11)
 anterior: "[[2026-11-08 - Radar Dev & IA (Ciclo 3)]]"
+proximo: "[[2026-11-10 - Radar Dev & IA]]"
 ---
 # Radar Dev & IA — 09/11/2026
 
