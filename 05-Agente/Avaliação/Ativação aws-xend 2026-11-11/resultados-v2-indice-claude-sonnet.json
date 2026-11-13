@@ -1,0 +1,328 @@
+[
+ {
+  "id": "A01",
+  "skill": "aws-xend",
+  "grupo": "explicito",
+  "prompt": "Crie um bucket S3 na conta da Xend para guardar os logs do indexd.",
+  "tools": [
+   "Skill:aws-xend",
+   "Grep",
+   "Glob"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1453338,
+  "vazio": false
+ },
+ {
+  "id": "A02",
+  "skill": "aws-xend",
+  "grupo": "explicito",
+  "prompt": "Monte o CDK de um cluster ECS Fargate para o indexd na AWS.",
+  "tools": [
+   "Skill:aws-xend",
+   "Glob",
+   "Grep",
+   "Glob"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1449618,
+  "vazio": false
+ },
+ {
+  "id": "A03",
+  "skill": "aws-xend",
+  "grupo": "explicito",
+  "prompt": "Faça o deploy dessa stack do CloudFormation na AWS.",
+  "tools": [
+   "Skill:aws-xend",
+   "Glob"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1360058,
+  "vazio": false
+ },
+ {
+  "id": "A04",
+  "skill": "aws-xend",
+  "grupo": "explicito",
+  "prompt": "Quero criar um role de IAM para uma Lambda que lê de uma fila SQS. Cria pra mim.",
+  "tools": [
+   "Skill:aws-xend"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1304898,
+  "vazio": false
+ },
+ {
+  "id": "A05",
+  "skill": "aws-xend",
+  "grupo": "explicito",
+  "prompt": "Lista os recursos que temos hoje na AWS da Xend.",
+  "tools": [
+   "Skill:aws-xend",
+   "Bash",
+   "ToolSearch"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1348762,
+  "vazio": false
+ },
+ {
+  "id": "A06",
+  "skill": "aws-xend",
+  "grupo": "explicito",
+  "prompt": "Preciso subir uma instância EC2 para rodar o indexd. Pode provisionar?",
+  "tools": [
+   "Skill:aws-xend",
+   "Grep",
+   "Glob"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1360184,
+  "vazio": false
+ },
+ {
+  "id": "A07",
+  "skill": "aws-xend",
+  "grupo": "implicito",
+  "prompt": "Em qual região posso rodar o indexd?",
+  "tools": [
+   "Skill:aws-xend"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.12948320000000002,
+  "vazio": false
+ },
+ {
+  "id": "A08",
+  "skill": "aws-xend",
+  "grupo": "implicito",
+  "prompt": "Deu AccessDenied com 'explicit deny in a service control policy' ao criar um recurso em eu-west-1. O que eu faço?",
+  "tools": [
+   "Skill:aws-xend"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1290016,
+  "vazio": false
+ },
+ {
+  "id": "A09",
+  "skill": "aws-xend",
+  "grupo": "implicito",
+  "prompt": "Quanto vai custar manter o indexd rodando num cluster pequeno? Pode subir e eu vejo a fatura depois.",
+  "tools": [
+   "Skill:aws-xend",
+   "Glob",
+   "Glob",
+   "Grep"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1574676,
+  "vazio": false
+ },
+ {
+  "id": "A10",
+  "skill": "aws-xend",
+  "grupo": "implicito",
+  "prompt": "Qual perfil do CLI eu uso para autenticar e como confirmo que estou na conta certa?",
+  "tools": [
+   "Skill:aws-xend"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.12446300000000002,
+  "vazio": false
+ },
+ {
+  "id": "A11",
+  "skill": "aws-xend",
+  "grupo": "implicito",
+  "prompt": "Preciso de um banco Postgres gerenciado para o book on-chain. Pode criar um RDS?",
+  "tools": [
+   "Skill:aws-xend",
+   "Grep"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.147279,
+  "vazio": false
+ },
+ {
+  "id": "A12",
+  "skill": "aws-xend",
+  "grupo": "implicito",
+  "prompt": "Dá para replicar o bucket de backup em outra região? Configura isso.",
+  "tools": [
+   "Skill:aws-xend",
+   "Bash"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1460784,
+  "vazio": false
+ },
+ {
+  "id": "A13",
+  "skill": "aws-xend",
+  "grupo": "implicito",
+  "prompt": "Gera uma chave de acesso de usuário IAM para o pipeline de CI usar.",
+  "tools": [
+   "Skill:aws-xend"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1308896,
+  "vazio": false
+ },
+ {
+  "id": "A14",
+  "skill": "aws-xend",
+  "grupo": "implicito",
+  "prompt": "Limpei os testes de ontem? Ainda tem coisa rodando que eu esqueci de desligar na nuvem?",
+  "tools": [
+   "Skill:aws-xend",
+   "Grep",
+   "Bash"
+  ],
+  "skills": [
+   "aws-xend"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1484418,
+  "vazio": false
+ },
+ {
+  "id": "A15",
+  "skill": "aws-xend",
+  "grupo": "negativo",
+  "prompt": "Explique o que o pacote apps/mm faz, só pela leitura do README.",
+  "tools": [
+   "Glob",
+   "Glob",
+   "Glob"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1290606,
+  "vazio": false
+ },
+ {
+  "id": "A16",
+  "skill": "aws-xend",
+  "grupo": "negativo",
+  "prompt": "Escreva um teste unitário em Go para uma função que soma duas posições de book.",
+  "tools": [
+   "Grep"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1254056,
+  "vazio": false
+ },
+ {
+  "id": "A17",
+  "skill": "aws-xend",
+  "grupo": "negativo",
+  "prompt": "Resuma o último commit do repositório em duas frases.",
+  "tools": [
+   "Grep"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1194172,
+  "vazio": false
+ },
+ {
+  "id": "A18",
+  "skill": "aws-xend",
+  "grupo": "negativo",
+  "prompt": "Corrija o erro de lint 'variável não usada' em um arquivo Python sem usar noqa.",
+  "tools": [
+   "Glob"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.117649,
+  "vazio": false
+ },
+ {
+  "id": "A19",
+  "skill": "aws-xend",
+  "grupo": "negativo",
+  "prompt": "Qual a diferença entre um market maker e um market taker?",
+  "tools": [],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1055038,
+  "vazio": false
+ },
+ {
+  "id": "A20",
+  "skill": "aws-xend",
+  "grupo": "negativo",
+  "prompt": "Renomeie a função getBook para fetchBook em todo o código TypeScript.",
+  "tools": [
+   "Grep",
+   "Grep"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1212486,
+  "vazio": false
+ }
+]

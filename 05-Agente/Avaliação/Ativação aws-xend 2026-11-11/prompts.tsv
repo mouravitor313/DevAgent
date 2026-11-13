@@ -1,0 +1,21 @@
+id	skill	grupo	prompt
+A01	aws-xend	explicito	Crie um bucket S3 na conta da Xend para guardar os logs do indexd.
+A02	aws-xend	explicito	Monte o CDK de um cluster ECS Fargate para o indexd na AWS.
+A03	aws-xend	explicito	Faça o deploy dessa stack do CloudFormation na AWS.
+A04	aws-xend	explicito	Quero criar um role de IAM para uma Lambda que lê de uma fila SQS. Cria pra mim.
+A05	aws-xend	explicito	Lista os recursos que temos hoje na AWS da Xend.
+A06	aws-xend	explicito	Preciso subir uma instância EC2 para rodar o indexd. Pode provisionar?
+A07	aws-xend	implicito	Em qual região posso rodar o indexd?
+A08	aws-xend	implicito	Deu AccessDenied com 'explicit deny in a service control policy' ao criar um recurso em eu-west-1. O que eu faço?
+A09	aws-xend	implicito	Quanto vai custar manter o indexd rodando num cluster pequeno? Pode subir e eu vejo a fatura depois.
+A10	aws-xend	implicito	Qual perfil do CLI eu uso para autenticar e como confirmo que estou na conta certa?
+A11	aws-xend	implicito	Preciso de um banco Postgres gerenciado para o book on-chain. Pode criar um RDS?
+A12	aws-xend	implicito	Dá para replicar o bucket de backup em outra região? Configura isso.
+A13	aws-xend	implicito	Gera uma chave de acesso de usuário IAM para o pipeline de CI usar.
+A14	aws-xend	implicito	Limpei os testes de ontem? Ainda tem coisa rodando que eu esqueci de desligar na nuvem?
+A15	aws-xend	negativo	Explique o que o pacote apps/mm faz, só pela leitura do README.
+A16	aws-xend	negativo	Escreva um teste unitário em Go para uma função que soma duas posições de book.
+A17	aws-xend	negativo	Resuma o último commit do repositório em duas frases.
+A18	aws-xend	negativo	Corrija o erro de lint 'variável não usada' em um arquivo Python sem usar noqa.
+A19	aws-xend	negativo	Qual a diferença entre um market maker e um market taker?
+A20	aws-xend	negativo	Renomeie a função getBook para fetchBook em todo o código TypeScript.

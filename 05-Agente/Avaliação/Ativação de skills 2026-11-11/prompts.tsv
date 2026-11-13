@@ -1,0 +1,41 @@
+id	skill	grupo	prompt
+R01	registro-de-decisoes	explicito	Registra essa decisão: a partir de agora o Registro de decisões fica só em português.
+R02	registro-de-decisoes	explicito	Anota no registro de decisões que o Haiku é o executor padrão das coletas.
+R03	registro-de-decisoes	explicito	Decidi: o repo xend-landing não recebe mais deploys automáticos até eu liberar. Grava isso.
+R04	registro-de-decisoes	explicito	Grava como decisão que as notas de Radar saem toda manhã às 7h.
+R05	registro-de-decisoes	explicito	Decisão tomada: vamos usar pnpm em todos os repos novos. Registra.
+R06	registro-de-decisoes	explicito	Adiciona ao registro de decisões: não tocar no baas-api até a migração do banco terminar.
+R07	registro-de-decisoes	implicito	Pode remover a pasta 99-Arquivo, não vou usar.
+R08	registro-de-decisoes	implicito	O que decidimos sobre o baas-api?
+R09	registro-de-decisoes	implicito	Fica o Sonnet como modelo padrão, o Opus só para revisão.
+R10	registro-de-decisoes	implicito	Vamos usar o OpenCode com modelo gratuito para as tarefas de coleta.
+R11	registro-de-decisoes	implicito	Antes de eu mover o repo hedglobal para outra pasta, tem alguma restrição vigente?
+R12	registro-de-decisoes	implicito	Sai a skill de brainstorming do catálogo, não quero mais ela.
+R13	registro-de-decisoes	implicito	Tem alguma regra sobre mexer no xend-platform? Quero reorganizar as pastas dele.
+R14	registro-de-decisoes	implicito	D2, a opção B. Pode seguir.
+R15	registro-de-decisoes	negativo	Explica a diferença entre REST e GraphQL em três linhas.
+R16	registro-de-decisoes	negativo	Quais decisões de arquitetura o Next.js 15 mudou em relação ao 14?
+R17	registro-de-decisoes	negativo	Cria um script em Python que soma os números de um arquivo CSV.
+R18	registro-de-decisoes	negativo	Lê o arquivo README.md desta pasta e resume em duas frases.
+R19	registro-de-decisoes	negativo	Qual a capital da Austrália?
+R20	registro-de-decisoes	negativo	Escreve uma função em TypeScript que remove duplicatas de um array.
+C01	coleta-contexto-repo	explicito	Faz um dossiê do repo C:\Users\Pedro\Projetos\xend-platform.
+C02	coleta-contexto-repo	explicito	Preciso de uma coleta de contexto do baas-api: stacks, comandos e regras.
+C03	coleta-contexto-repo	explicito	Faz o levantamento do repo hedglobal e grava o resultado em um dossiê.
+C04	coleta-contexto-repo	explicito	Usa a skill de coleta de contexto no repo XEND-RFQ-PORTAL.
+C05	coleta-contexto-repo	explicito	Mapeia o repo xend-landing para outro agente: comandos de build, teste e regras dos arquivos de instrução.
+C06	coleta-contexto-repo	explicito	Vou preencher a nota de Stacks de Go. Levanta o contexto do repo xend-platform para ela.
+C07	coleta-contexto-repo	implicito	Quero entender como o baas-api está organizado antes de mexer: quais stacks, como roda, que regras ele tem.
+C08	coleta-contexto-repo	implicito	Tem divergência entre o CLAUDE.md e o AGENTS.md do xend-platform? Olha o repo e me diz.
+C09	coleta-contexto-repo	implicito	Como se roda e se testa o XEND-RFQ-PORTAL? Descobre lendo o repo, sem alterar nada.
+C10	coleta-contexto-repo	implicito	Revisa a nota de Stacks de Next.js comparando com o que o repo xend-landing realmente usa.
+C11	coleta-contexto-repo	implicito	Vou passar o hedglobal para o Codex. O que ele precisa saber do repo?
+C12	coleta-contexto-repo	implicito	Que versões de Node e de TypeScript o xend-landing declara, e onde estão os comandos de lint?
+C13	coleta-contexto-repo	implicito	Me dá um panorama das regras de agente espalhadas pelo xend-platform, com arquivo e linha.
+C14	coleta-contexto-repo	implicito	Quais lacunas de documentação o baas-api tem para um agente novo trabalhar nele?
+C15	coleta-contexto-repo	negativo	Corrige o bug de paginação no endpoint /orders do baas-api.
+C16	coleta-contexto-repo	negativo	Cria um componente React de botão com variantes primary e secondary.
+C17	coleta-contexto-repo	negativo	Explica o que é um dossiê de segurança em empresas de câmbio.
+C18	coleta-contexto-repo	negativo	Roda os testes do xend-platform e me diz quais falharam.
+C19	coleta-contexto-repo	negativo	Escreve uma query SQL que lista os 10 maiores clientes por volume.
+C20	coleta-contexto-repo	negativo	Faz o commit das mudanças atuais com uma mensagem em português.

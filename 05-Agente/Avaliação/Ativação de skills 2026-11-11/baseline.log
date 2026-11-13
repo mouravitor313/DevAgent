@@ -1,0 +1,40 @@
+C01 explicito ATIVOU | Skill:coleta-contexto-repo,ToolSearch,Grep,Read,Read 
+C02 explicito ATIVOU | Skill:coleta-contexto-repo,Bash,Glob,Glob,Glob 
+C03 explicito ATIVOU | Skill:coleta-contexto-repo,Bash,Bash,Glob,Glob 
+C04 explicito ATIVOU | Skill:coleta-contexto-repo,Bash,Glob,Glob,Glob 
+C05 explicito ATIVOU | Skill:coleta-contexto-repo,Bash,Glob,Glob,Glob 
+C06 explicito ATIVOU | Skill:coleta-contexto-repo,Bash,Grep,Read,Read,Read,Read 
+C07 implicito ATIVOU | Skill:coleta-contexto-repo,Glob,Grep 
+C08 implicito - | Glob 
+C09 implicito - | Glob,Glob 
+C10 implicito ATIVOU | Skill:coleta-contexto-repo,Grep,Bash,Bash,Glob,Glob 
+C11 implicito - | Glob,Grep,Glob 
+C12 implicito - | Glob 
+C13 implicito - | Glob,Grep 
+C14 implicito - | Glob,Grep,Glob 
+C15 negativo  - | Grep,Glob 
+C16 negativo  - | Write,Write 
+C17 negativo  - |  
+C18 negativo  - | Grep,Glob 
+C19 negativo  - |  
+C20 negativo  - | Bash 
+R01 explicito ATIVOU | Skill:registro-de-decisoes,Read 
+R02 explicito ATIVOU | Skill:registro-de-decisoes,Read 
+R03 explicito ATIVOU | Skill:registro-de-decisoes,Read,Grep 
+R04 explicito ATIVOU | Skill:registro-de-decisoes,Read 
+R05 explicito ATIVOU | Skill:registro-de-decisoes,Grep,Read 
+R06 explicito ATIVOU | Skill:registro-de-decisoes,Read,Grep 
+R07 implicito - | Grep,Glob 
+R08 implicito - | Grep,Read 
+R09 implicito ATIVOU | Skill:registro-de-decisoes,Read 
+R10 implicito ATIVOU | Skill:registro-de-decisoes,Read 
+R11 implicito - | Grep 
+R12 implicito - | Glob,Grep 
+R13 implicito - | Grep,Grep,Glob 
+R14 implicito - | Grep,Glob 
+R15 negativo  - |  
+R16 negativo  - |  
+R17 negativo  - | Write 
+R18 negativo  - | Read,Glob 
+R19 negativo  - |  
+R20 negativo  - |  

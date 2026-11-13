@@ -1,0 +1,637 @@
+[
+ {
+  "id": "C01",
+  "skill": "coleta-contexto-repo",
+  "grupo": "explicito",
+  "prompt": "Faz um dossiê do repo C:\\Users\\Pedro\\Projetos\\xend-platform.",
+  "tools": [
+   "Skill:coleta-contexto-repo",
+   "Bash",
+   "Read",
+   "Read",
+   "Read"
+  ],
+  "skills": [
+   "coleta-contexto-repo"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.15332060000000003,
+  "vazio": false
+ },
+ {
+  "id": "C02",
+  "skill": "coleta-contexto-repo",
+  "grupo": "explicito",
+  "prompt": "Preciso de uma coleta de contexto do baas-api: stacks, comandos e regras.",
+  "tools": [
+   "Skill:coleta-contexto-repo",
+   "ToolSearch",
+   "Glob",
+   "Glob",
+   "Glob"
+  ],
+  "skills": [
+   "coleta-contexto-repo"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1569832,
+  "vazio": false
+ },
+ {
+  "id": "C03",
+  "skill": "coleta-contexto-repo",
+  "grupo": "explicito",
+  "prompt": "Faz o levantamento do repo hedglobal e grava o resultado em um dossiê.",
+  "tools": [
+   "Skill:coleta-contexto-repo",
+   "Bash",
+   "Glob"
+  ],
+  "skills": [
+   "coleta-contexto-repo"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.152373,
+  "vazio": false
+ },
+ {
+  "id": "C04",
+  "skill": "coleta-contexto-repo",
+  "grupo": "explicito",
+  "prompt": "Usa a skill de coleta de contexto no repo XEND-RFQ-PORTAL.",
+  "tools": [
+   "Skill:coleta-contexto-repo",
+   "ToolSearch"
+  ],
+  "skills": [
+   "coleta-contexto-repo"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1617014,
+  "vazio": false
+ },
+ {
+  "id": "C05",
+  "skill": "coleta-contexto-repo",
+  "grupo": "explicito",
+  "prompt": "Mapeia o repo xend-landing para outro agente: comandos de build, teste e regras dos arquivos de instrução.",
+  "tools": [
+   "Skill:coleta-contexto-repo",
+   "Read",
+   "Read",
+   "Read"
+  ],
+  "skills": [
+   "coleta-contexto-repo"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1615406,
+  "vazio": false
+ },
+ {
+  "id": "C06",
+  "skill": "coleta-contexto-repo",
+  "grupo": "explicito",
+  "prompt": "Vou preencher a nota de Stacks de Go. Levanta o contexto do repo xend-platform para ela.",
+  "tools": [
+   "Skill:coleta-contexto-repo",
+   "Glob",
+   "Glob"
+  ],
+  "skills": [
+   "coleta-contexto-repo"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.16224459999999996,
+  "vazio": false
+ },
+ {
+  "id": "C07",
+  "skill": "coleta-contexto-repo",
+  "grupo": "implicito",
+  "prompt": "Quero entender como o baas-api está organizado antes de mexer: quais stacks, como roda, que regras ele tem.",
+  "tools": [
+   "Skill:coleta-contexto-repo",
+   "Glob",
+   "Glob",
+   "Glob",
+   "Grep"
+  ],
+  "skills": [
+   "coleta-contexto-repo"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1638484,
+  "vazio": false
+ },
+ {
+  "id": "C08",
+  "skill": "coleta-contexto-repo",
+  "grupo": "implicito",
+  "prompt": "Tem divergência entre o CLAUDE.md e o AGENTS.md do xend-platform? Olha o repo e me diz.",
+  "tools": [
+   "Glob"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.12164,
+  "vazio": false
+ },
+ {
+  "id": "C09",
+  "skill": "coleta-contexto-repo",
+  "grupo": "implicito",
+  "prompt": "Como se roda e se testa o XEND-RFQ-PORTAL? Descobre lendo o repo, sem alterar nada.",
+  "tools": [
+   "Glob",
+   "Glob"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.123698,
+  "vazio": false
+ },
+ {
+  "id": "C10",
+  "skill": "coleta-contexto-repo",
+  "grupo": "implicito",
+  "prompt": "Revisa a nota de Stacks de Next.js comparando com o que o repo xend-landing realmente usa.",
+  "tools": [
+   "Skill:coleta-contexto-repo",
+   "Bash",
+   "Glob",
+   "Grep",
+   "Glob"
+  ],
+  "skills": [
+   "coleta-contexto-repo"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1569932,
+  "vazio": false
+ },
+ {
+  "id": "C11",
+  "skill": "coleta-contexto-repo",
+  "grupo": "implicito",
+  "prompt": "Vou passar o hedglobal para o Codex. O que ele precisa saber do repo?",
+  "tools": [
+   "Glob",
+   "Grep",
+   "Glob"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.13075720000000002,
+  "vazio": false
+ },
+ {
+  "id": "C12",
+  "skill": "coleta-contexto-repo",
+  "grupo": "implicito",
+  "prompt": "Que versões de Node e de TypeScript o xend-landing declara, e onde estão os comandos de lint?",
+  "tools": [
+   "Glob"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1242984,
+  "vazio": false
+ },
+ {
+  "id": "C13",
+  "skill": "coleta-contexto-repo",
+  "grupo": "implicito",
+  "prompt": "Me dá um panorama das regras de agente espalhadas pelo xend-platform, com arquivo e linha.",
+  "tools": [
+   "Skill:coleta-contexto-repo",
+   "Bash",
+   "Read",
+   "Read"
+  ],
+  "skills": [
+   "coleta-contexto-repo"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1559694,
+  "vazio": false
+ },
+ {
+  "id": "C14",
+  "skill": "coleta-contexto-repo",
+  "grupo": "implicito",
+  "prompt": "Quais lacunas de documentação o baas-api tem para um agente novo trabalhar nele?",
+  "tools": [
+   "Glob",
+   "Grep"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1264976,
+  "vazio": false
+ },
+ {
+  "id": "C15",
+  "skill": "coleta-contexto-repo",
+  "grupo": "negativo",
+  "prompt": "Corrige o bug de paginação no endpoint /orders do baas-api.",
+  "tools": [
+   "Grep",
+   "Glob"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1255522,
+  "vazio": false
+ },
+ {
+  "id": "C16",
+  "skill": "coleta-contexto-repo",
+  "grupo": "negativo",
+  "prompt": "Cria um componente React de botão com variantes primary e secondary.",
+  "tools": [
+   "Write",
+   "Write"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1375094,
+  "vazio": false
+ },
+ {
+  "id": "C17",
+  "skill": "coleta-contexto-repo",
+  "grupo": "negativo",
+  "prompt": "Explica o que é um dossiê de segurança em empresas de câmbio.",
+  "tools": [],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1232708,
+  "vazio": false
+ },
+ {
+  "id": "C18",
+  "skill": "coleta-contexto-repo",
+  "grupo": "negativo",
+  "prompt": "Roda os testes do xend-platform e me diz quais falharam.",
+  "tools": [
+   "Glob",
+   "Read"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1234656,
+  "vazio": false
+ },
+ {
+  "id": "C19",
+  "skill": "coleta-contexto-repo",
+  "grupo": "negativo",
+  "prompt": "Escreve uma query SQL que lista os 10 maiores clientes por volume.",
+  "tools": [],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1140488,
+  "vazio": false
+ },
+ {
+  "id": "C20",
+  "skill": "coleta-contexto-repo",
+  "grupo": "negativo",
+  "prompt": "Faz o commit das mudanças atuais com uma mensagem em português.",
+  "tools": [
+   "Bash"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1191574,
+  "vazio": false
+ },
+ {
+  "id": "R01",
+  "skill": "registro-de-decisoes",
+  "grupo": "explicito",
+  "prompt": "Registra essa decisão: a partir de agora o Registro de decisões fica só em português.",
+  "tools": [
+   "Skill:registro-de-decisoes",
+   "Read"
+  ],
+  "skills": [
+   "registro-de-decisoes"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1433432,
+  "vazio": false
+ },
+ {
+  "id": "R02",
+  "skill": "registro-de-decisoes",
+  "grupo": "explicito",
+  "prompt": "Anota no registro de decisões que o Haiku é o executor padrão das coletas.",
+  "tools": [
+   "Skill:registro-de-decisoes",
+   "Read"
+  ],
+  "skills": [
+   "registro-de-decisoes"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.14588500000000001,
+  "vazio": false
+ },
+ {
+  "id": "R03",
+  "skill": "registro-de-decisoes",
+  "grupo": "explicito",
+  "prompt": "Decidi: o repo xend-landing não recebe mais deploys automáticos até eu liberar. Grava isso.",
+  "tools": [
+   "Skill:registro-de-decisoes",
+   "Read",
+   "Grep"
+  ],
+  "skills": [
+   "registro-de-decisoes"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.14130220000000002,
+  "vazio": false
+ },
+ {
+  "id": "R04",
+  "skill": "registro-de-decisoes",
+  "grupo": "explicito",
+  "prompt": "Grava como decisão que as notas de Radar saem toda manhã às 7h.",
+  "tools": [
+   "Skill:registro-de-decisoes",
+   "Read"
+  ],
+  "skills": [
+   "registro-de-decisoes"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.13683620000000002,
+  "vazio": false
+ },
+ {
+  "id": "R05",
+  "skill": "registro-de-decisoes",
+  "grupo": "explicito",
+  "prompt": "Decisão tomada: vamos usar pnpm em todos os repos novos. Registra.",
+  "tools": [
+   "Skill:registro-de-decisoes",
+   "Read"
+  ],
+  "skills": [
+   "registro-de-decisoes"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1369858,
+  "vazio": false
+ },
+ {
+  "id": "R06",
+  "skill": "registro-de-decisoes",
+  "grupo": "explicito",
+  "prompt": "Adiciona ao registro de decisões: não tocar no baas-api até a migração do banco terminar.",
+  "tools": [
+   "Skill:registro-de-decisoes",
+   "Read",
+   "Grep"
+  ],
+  "skills": [
+   "registro-de-decisoes"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1391014,
+  "vazio": false
+ },
+ {
+  "id": "R07",
+  "skill": "registro-de-decisoes",
+  "grupo": "implicito",
+  "prompt": "Pode remover a pasta 99-Arquivo, não vou usar.",
+  "tools": [
+   "Grep",
+   "Glob"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.125176,
+  "vazio": false
+ },
+ {
+  "id": "R08",
+  "skill": "registro-de-decisoes",
+  "grupo": "implicito",
+  "prompt": "O que decidimos sobre o baas-api?",
+  "tools": [
+   "Grep"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1219182,
+  "vazio": false
+ },
+ {
+  "id": "R09",
+  "skill": "registro-de-decisoes",
+  "grupo": "implicito",
+  "prompt": "Fica o Sonnet como modelo padrão, o Opus só para revisão.",
+  "tools": [
+   "Skill:registro-de-decisoes",
+   "Read"
+  ],
+  "skills": [
+   "registro-de-decisoes"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1374996,
+  "vazio": false
+ },
+ {
+  "id": "R10",
+  "skill": "registro-de-decisoes",
+  "grupo": "implicito",
+  "prompt": "Vamos usar o OpenCode com modelo gratuito para as tarefas de coleta.",
+  "tools": [
+   "Skill:registro-de-decisoes",
+   "Grep"
+  ],
+  "skills": [
+   "registro-de-decisoes"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.14031280000000002,
+  "vazio": false
+ },
+ {
+  "id": "R11",
+  "skill": "registro-de-decisoes",
+  "grupo": "implicito",
+  "prompt": "Antes de eu mover o repo hedglobal para outra pasta, tem alguma restrição vigente?",
+  "tools": [
+   "Grep"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1226862,
+  "vazio": false
+ },
+ {
+  "id": "R12",
+  "skill": "registro-de-decisoes",
+  "grupo": "implicito",
+  "prompt": "Sai a skill de brainstorming do catálogo, não quero mais ela.",
+  "tools": [
+   "Glob",
+   "Grep"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1265024,
+  "vazio": false
+ },
+ {
+  "id": "R13",
+  "skill": "registro-de-decisoes",
+  "grupo": "implicito",
+  "prompt": "Tem alguma regra sobre mexer no xend-platform? Quero reorganizar as pastas dele.",
+  "tools": [
+   "Grep",
+   "Grep",
+   "Glob"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1275864,
+  "vazio": false
+ },
+ {
+  "id": "R14",
+  "skill": "registro-de-decisoes",
+  "grupo": "implicito",
+  "prompt": "D2, a opção B. Pode seguir.",
+  "tools": [
+   "Skill:registro-de-decisoes",
+   "Grep",
+   "Glob"
+  ],
+  "skills": [
+   "registro-de-decisoes"
+  ],
+  "ativou": true,
+  "qualquer": true,
+  "cost": 0.1411608,
+  "vazio": false
+ },
+ {
+  "id": "R15",
+  "skill": "registro-de-decisoes",
+  "grupo": "negativo",
+  "prompt": "Explica a diferença entre REST e GraphQL em três linhas.",
+  "tools": [],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1099908,
+  "vazio": false
+ },
+ {
+  "id": "R16",
+  "skill": "registro-de-decisoes",
+  "grupo": "negativo",
+  "prompt": "Quais decisões de arquitetura o Next.js 15 mudou em relação ao 14?",
+  "tools": [],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1226748,
+  "vazio": false
+ },
+ {
+  "id": "R17",
+  "skill": "registro-de-decisoes",
+  "grupo": "negativo",
+  "prompt": "Cria um script em Python que soma os números de um arquivo CSV.",
+  "tools": [
+   "Write"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.14175980000000002,
+  "vazio": false
+ },
+ {
+  "id": "R18",
+  "skill": "registro-de-decisoes",
+  "grupo": "negativo",
+  "prompt": "Lê o arquivo README.md desta pasta e resume em duas frases.",
+  "tools": [
+   "Glob",
+   "Glob"
+  ],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1297914,
+  "vazio": false
+ },
+ {
+  "id": "R19",
+  "skill": "registro-de-decisoes",
+  "grupo": "negativo",
+  "prompt": "Qual a capital da Austrália?",
+  "tools": [],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1079268,
+  "vazio": false
+ },
+ {
+  "id": "R20",
+  "skill": "registro-de-decisoes",
+  "grupo": "negativo",
+  "prompt": "Escreve uma função em TypeScript que remove duplicatas de um array.",
+  "tools": [],
+  "skills": [],
+  "ativou": false,
+  "qualquer": false,
+  "cost": 0.1134608,
+  "vazio": false
+ }
+]

@@ -1,0 +1,20 @@
+A01 explicito ATIVOU | Skill:aws-xend,Grep,Grep,Bash 
+A02 explicito ATIVOU | Skill:aws-xend,Grep,Glob,Glob,Read,Glob,Glob,Grep,Grep 
+A03 explicito ATIVOU | Skill:aws-xend,Glob 
+A04 explicito ATIVOU | Skill:aws-xend 
+A05 explicito ATIVOU | Skill:aws-xend,Bash,Grep 
+A06 explicito ATIVOU | Skill:aws-xend,Grep,Bash,Glob 
+A07 implicito ATIVOU | Skill:aws-xend,Grep 
+A08 implicito ATIVOU | Skill:aws-xend 
+A09 implicito ATIVOU | Skill:aws-xend,Glob,Grep 
+A10 implicito ATIVOU | Skill:aws-xend 
+A11 implicito ATIVOU | Skill:aws-xend 
+A12 implicito ATIVOU | Skill:aws-xend,Bash 
+A13 implicito ATIVOU | Skill:aws-xend 
+A14 implicito - | ToolSearch,Glob,mcp__claude_ai_Supabase__list_projects,mcp__claude_ai_Vercel__list_teams 
+A15 negativo  - | Glob,Glob 
+A16 negativo  - | Grep 
+A17 negativo  - | Bash 
+A18 negativo  - | Glob 
+A19 negativo  - |  
+A20 negativo  - | Grep,Glob,Grep 
