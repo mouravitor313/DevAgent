@@ -37,7 +37,7 @@ Decisões só têm valor se forem lembradas **quando importam**. Esta skill gara
 - quando o usuário perguntar o que foi decidido
 
 **Como:**
-1. Busque no Registro pelo escopo e por termos do assunto (ex.: `grep -i "xend-baas-api\|worktree"`). Não leia o arquivo inteiro sem necessidade.
+1. Busque no Registro pelo escopo **e sempre também pelas linhas `global`**, além de termos do assunto (ex.: `grep -i "| global |\|xend-baas-api\|worktree"`). Não leia o arquivo inteiro sem necessidade.
 2. Abra o ADR só se a linha não bastar.
 3. Considere apenas as linhas com status `vigente`. Para as `temporária`, verifique se a condição de expiração já ocorreu; se não tiver certeza, pergunte.
 4. Se o pedido atual **conflitar** com uma decisão vigente, **pare e avise** antes de agir, citando o ID (ex.: "isso conflita com DEC-2026-11-08-07"). O usuário decide se a decisão muda; se mudar, registre a nova.

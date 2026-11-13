@@ -3,7 +3,7 @@ tipo: decisão
 status: aceita
 tags: [devagent, adr, stacks]
 criado: 2026-11-08
-atualizado: 2026-11-08
+atualizado: 2026-11-10
 decisores: [Vítor]
 substitui:
 ---
@@ -39,3 +39,6 @@ Regras de modularidade:
 ## Fontes / sessões relacionadas
 - [[Kickoff]] · [[Roadmap]] · [[ADR-0002 - Claude Code CLI como ambiente principal]]
 - [[2026-11-08 - Stacks e perguntas do Kickoff]]
+
+## Adendo 2026-11-10
+- O contexto de cada stack vira **skill** e sai do contexto principal (DEC-2026-11-10-29, [[ADR-0006 - Contexto mínimo, padrões abertos e tasks paralelas]]). Plugins só quando não houver skill equivalente (DEC-2026-11-10-23).
