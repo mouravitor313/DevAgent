@@ -3,7 +3,7 @@ tipo: projeto
 status: em-construção
 tags: [devagent, roadmap]
 criado: 2026-11-08
-atualizado: 2026-11-12
+atualizado: 2026-11-13
 relacionados: ["[[Kickoff]]"]
 ---
 # Roadmap — Dev Agent
@@ -44,7 +44,7 @@ relacionados: ["[[Kickoff]]"]
 
 ## Fase 4 — Avaliação e operação
 - [ ] Benchmark interno com tarefas reais em `05-Agente/Avaliação/`
-- [ ] Métricas: custo/tarefa, taxa de sucesso, retrabalho
+- [ ] Métricas: custo/tarefa, taxa de sucesso, retrabalho — **custo/tarefa iniciado em 13/11** como custo por effort point (1 PR mergeado) → [[Custo por effort point]] (DEC-2026-11-13-01/02)
 - [ ] Rotinas agendadas alimentando o vault
 
 ## Futuro distante (fora do foco atual — DEC-2026-11-08-26)
@@ -69,6 +69,7 @@ Foco atual: modelos de API baratos/gratuitos. Modelos locais/auto-hospedados só
 - [x] **Destino das regras de `.specs/` do onchain — decidido em 11/11** (DEC-2026-11-11-07..10 → [[ADR-0007 - Spec versionada e estado no GitHub]] · [[2026-11-11 - Destino do .specs e integração com Issues]]). Item original: decidir o destino das duas regras de `.specs/` no `AGENTS.md` do `xend-onchain` (atualizar `STATE.md`/`PROJECT.md`/`ROADMAP.md` e `tasks.md`/`spec.md` após concluir feature/tasks): pressupõem o ciclo SDD e as tasks em markdown. Hipótese do Vítor (11/11): avaliar junto com a **P2** (tasks em GitHub Issues, modelo híbrido: spec/ADR em markdown, execução em issue) e com o destino do `sdd-lifecycle` do hedglobal → [[2026-11-11 - P1 enxugamento do contexto do xend-onchain]]
 - [x] ADR-0007 aplicado no `xend-onchain` em 11/11: regra nova no `AGENTS.md` (substitui as duas de `.specs/` e o gate `/sdd-phase`) e contrato de artefatos do `HARNESS.md` → **PR #133** (https://github.com/Xend-Exchange/xend-onchain/pull/133), mesclado pelo Vítor em 11/11; checkout principal ressincronizado em `main` e worktree `xend-onchain-specs-adr7` removido
 - [ ] **PRÓXIMA SESSÃO (definido em 11/11), continuação do ADR-0007 no onchain** → [[2026-11-11 - Destino do .specs e integração com Issues]]:
+- [x] **Effort point semanal** (DEC-2026-11-13-02/03): agendado no Windows ("DevAgent - effort points semanal", segundas às 09:00) → [[Custo por effort point]]. Pendente: conferir a tendência a cada semana
   - [ ] Abrir PR com as alterações locais da P1 no checkout principal (`main`): linha da `aws-xend` no `AGENTS.md` e `CLAUDE.md` → `@AGENTS.md`. Atenção: o `CLAUDE.md` **versionado** ainda tem as regras antigas de `.specs/` e do `/sdd-phase` (contradiz o PR #133) até esse PR entrar. Backup em `local-p1.patch` no scratchpad da sessão de 11/11
   - [ ] **Revisar o `HARNESS.md` por completo** (pedido do Vítor): no PR #133 só o contrato de artefatos foi atualizado; personas `architect`/`planner`/`engineer-*`/`executor`/`reviewer`, matriz de modelos (slugs OpenRouter antigos), gerador `scripts/sync-opencode.mjs` e passos de cópia são anteriores ao ADR-0006/0007. Avaliar junto com a revisão dos subagentes `executor-*` (DEC-2026-11-10-30)
   - [ ] Extrair as lições duráveis do `.specs/project/STATE.md` para o `apps/mm/AGENTS.md` ou skills (ex.: `go test -race` só no container `golang:1.27`; `autocrlf` quebra fixtures; shellcheck via Docker; worktrees isolados para executores paralelos)

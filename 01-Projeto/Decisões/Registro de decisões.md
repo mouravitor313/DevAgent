@@ -3,7 +3,7 @@ tipo: projeto
 status: em-construção
 tags: [devagent, decisões, registro]
 criado: 2026-11-08
-atualizado: 2026-11-12
+atualizado: 2026-11-13
 relacionados: ["[[Registro de decisões (skill)]]", "[[00 - Index]]"]
 ---
 # Registro de decisões
@@ -104,3 +104,6 @@ relacionados: ["[[Registro de decisões (skill)]]", "[[00 - Index]]"]
 | DEC-2026-11-12-09 | 2026-11-12 | global | **Limpeza pós-merge** do trabalho de um executor: `git worktree remove` do worktree e apagar a branch local `worktree-agent-*` (e a branch da issue) depois que o PR é mergeado | permanente | vigente | [[Subagents, agent teams e cross-session messaging]] · skill `executar-issue` |
 | DEC-2026-11-12-10 | 2026-11-12 | xend-onchain | Registrar no `AGENTS.md` do onchain o **fallback sem `make` no Windows**: `bash apps/mm/scripts/check.sh` (via PR) | permanente | vigente | [[Subagents, agent teams e cross-session messaging]] |
 | DEC-2026-11-12-11 | 2026-11-12 | xend-onchain | **Fita de trades da OKX (F1-T06) usa o canal `trades`** (`/ws/v5/public`, agregado por ordem agressora + preço), não o `trades-all`, depois da captura dupla (45 min + 15 min com `books`) que mostrou o `seqId` do `trades` no mesmo contador do book. Incluir `count`/`seq` no payload `trade` ainda não foi decidido | permanente | vigente | PR #186 (comentário com a evidência) |
+| DEC-2026-11-13-01 | 2026-11-13 | devagent | **Métrica "effort point"** (inspirada no incident.io): 1 effort point = **1 PR mergeado de autoria do Vítor**; o custo é o **custo equivalente de API** calculado a partir dos transcripts locais do Claude Code; o trabalho sem PR (pesquisa, terminal, vault) fica numa linha separada, "sem PR", fora da média | permanente | vigente | [[Custo por effort point]] |
+| DEC-2026-11-13-02 | 2026-11-13 | devagent | Operação da métrica: **script versionado no vault + nota semanal** `05-Agente/Avaliação/Custo por effort point.md`, com uma linha por semana para acompanhar a evolução | permanente | vigente | [[Custo por effort point]] |
+| DEC-2026-11-13-03 | 2026-11-13 | devagent | O effort point semanal roda por **tarefa agendada local** no Agendador do Windows ("DevAgent - effort points semanal", segundas às 09:00, roda ao ligar o PC se perdeu o horário), chamando `effort-points.js --append`; o log fica em `%LOCALAPPDATA%\effort-points\effort-points.log` | permanente | vigente | [[Custo por effort point]] |
