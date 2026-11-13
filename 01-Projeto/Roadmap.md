@@ -13,8 +13,8 @@ relacionados: ["[[Kickoff]]"]
 ## Fase 0 — Fundação (atual)
 - [x] Estrutura do vault `DevAgent/` + AGENTS.md/CLAUDE.md + templates
 - [x] Importar radars de 08/11 e notas existentes
-- [ ] Fechar perguntas em aberto do Kickoff — 3 de 4 respondidas em 08/11; falta fechar o orçamento (provisório ~R$ 2.000/mês, equipe toda; meta: reduzir)
-- [ ] Migrar o trabalho do projeto para o Claude Code CLI → [[ADR-0002 - Claude Code CLI como ambiente principal]] · checklist em [[Plano - Migração para agentes no terminal]]
+- [x] Fechar perguntas em aberto do Kickoff — 3 de 4 respondidas em 08/11; orçamento fechado em 13/11: teto ~R$ 2.000/mês (equipe toda), meta de cortar 55–60% sem deadline, cobrindo licenças e API (DEC-2026-11-13-04). Corte de assinaturas só depois de haver série de effort points; manter 1 Claude premium + outras mais baratas (DEC-2026-11-13-05) → [[Custo por effort point]]
+- [ ] Migrar o trabalho do projeto para o Claude Code CLI → [[ADR-0002 - Claude Code CLI como ambiente principal]] · checklist em [[Plano - Migração para agentes no terminal]] — **fica para depois, o Vítor retoma em outra sessão** (DEC-2026-11-13-06). Pendente: `/init`/`AGENTS.md` por repo, decisão da rotina do Radar, teste com 2º agente e promover o ADR-0002 a `aceita`
 - [x] Conectar a rotina do Radar para gravar direto em `03-Pesquisa/Radar/` (tarefa agendada `radar-dev-ia`, diária 07:00)
 
 ## Fase 1 — Pesquisa e definição
@@ -76,6 +76,7 @@ Foco atual: modelos de API baratos/gratuitos. Modelos locais/auto-hospedados só
   - [ ] MM BRL: criar milestones F0–F6 e o épico da F0, com a primeira spec em `specs/` (testa o fluxo do ADR-0007 de ponta a ponta) → fases e restrições em [[ADR-0005 - Arquitetura-alvo do Market Making BRL]] (seção "Plano em fases") · [[2026-11-10 - Check de realidade do MM BRL contra o PDF]]. Junto: versionar o PDF `docs/Market Making e Formação de Mercado.pdf` (untracked) e corrigir as menções ao ZMQ antigo em `apps/mm/CLAUDE.md` e `docs/02-arquitetura-e-risco.md`
   - [ ] Decidir o destino das cópias de `.specs/` nos worktrees (`binance-venue`, `book-onchain`, `brz-exit`, `exit-agnostic`)
   - [ ] Aplicar o ADR-0007 ao `.harness/rules/sdd-lifecycle.md` do hedglobal
+- [ ] **Cortar custo de assinaturas (meta −55% a −60% de ~R$ 2.000/mês, sem deadline; DEC-2026-11-13-04/05):** nenhuma assinatura é cancelada antes de haver série de effort points ([[Custo por effort point]]). Quando houver, listar as assinaturas com custo e uso, cancelar a(s) cara(s) e manter 1 Claude premium + outras mais baratas. Falta: definir quantas semanas bastam como série e levantar a lista de assinaturas
 - [ ] Converter o "Contexto" das notas de [[Stacks]] em skills (DEC-2026-11-10-29)
 - [ ] *(adiado — DEC-2026-11-10-26)* Revisar a implementação de skills de TDD
 - [ ] Excluir a skill `tlc-spec-driven` (descartada pela DEC-2026-11-10-08) do catálogo `~\.agents\skills-avaliacao\` (DEC-2026-11-10-14). Antes de mexer nas cópias dos repos, consultar o Registro.

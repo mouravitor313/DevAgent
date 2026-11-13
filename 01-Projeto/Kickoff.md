@@ -3,7 +3,7 @@ tipo: projeto
 status: em-construção
 tags: [devagent, kickoff]
 criado: 2026-11-08
-atualizado: 2026-11-08
+atualizado: 2026-11-13
 responsavel: Vítor
 relacionados: ["[[Roadmap]]", "[[ADR-0001 - Vault como memória do projeto]]"]
 ---
@@ -43,5 +43,5 @@ Construir um **agente desenvolvedor** próprio: um harness (instruções, skills
 ## Perguntas em aberto
 - [x] Qual a stack-alvo do agente? **Agnóstica** (Python, Go, TS, JS, Next, SQL e outras) → [[ADR-0004 - Stacks agnósticas e seção de Stacks modular]] · [[Stacks]] (DEC-2026-11-08-20/21)
 - [x] Quais tarefas o agente deve fazer primeiro? **Review, testes, specs, refactor, organização do workflow e gerenciamento de Git/GitHub** → [[Tarefas transversais]] (DEC-2026-11-08-22)
-- [ ] Orçamento mensal de tokens/licenças. **Provisório: ~R$ 2.000 para toda a equipe** (gasto atual), com a meta de reduzir; falta fechar (DEC-2026-11-08-23). O Claude do time é plano de time, não API.
+- [x] Orçamento mensal de tokens/licenças. **Fechado em 13/11:** teto de ~R$ 2.000/mês para a equipe toda e **meta de reduzir 55% a 60%** (→ ~R$ 800–900/mês), sem deadline; cobre licenças e API. Caminho: medir os effort points antes de cancelar assinaturas caras e manter 1 Claude premium + assinaturas mais baratas (DEC-2026-11-13-04/05, substituem a DEC-2026-11-08-23). O Claude do time é plano de time, não API → [[Custo por effort point]].
 - [x] Onde o agente roda? **Local, no Claude Code e no OpenCode.** OpenCode já instalado, com modelos gratuitos para testar o harness (DEC-2026-11-08-24). Para o *nosso* trabalho no projeto: [[ADR-0002 - Claude Code CLI como ambiente principal]].

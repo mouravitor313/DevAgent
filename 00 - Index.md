@@ -2,7 +2,7 @@
 tipo: index
 tags: [devagent, moc]
 criado: 2026-11-08
-atualizado: 2026-11-12
+atualizado: 2026-11-13
 ---
 # Dev Agent — Index
 
