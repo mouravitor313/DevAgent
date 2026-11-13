@@ -3,7 +3,7 @@ tipo: stack
 status: em-construção
 tags: [devagent, stack, go]
 criado: 2026-11-08
-atualizado: 2026-11-08
+atualizado: 2026-11-10
 relacionados: ["[[Stacks]]", "[[Tarefas transversais]]"]
 ---
 # Go
@@ -48,3 +48,4 @@ relacionados: ["[[Stacks]]", "[[Tarefas transversais]]"]
 | 2026-11-08 | Invariantes de market making: só o bot de ordens coloca/cancela; risco desliga estratégia, nunca o contrário; toda ordem tem correlation ID; sem wash trading/spoofing | xend-onchain/apps/mm/CLAUDE.md:86-106 |
 | 2026-11-08 | Bots de market making ainda não implementados; começar com `/sdd-phase Specify`. Itens `[conferir]`/`[completar]` são não verificados | xend-onchain/apps/mm/CLAUDE.md:12-13,83-84 |
 | 2026-11-08 | Não lidos: `ONBOARDING.md`, `deploy/README.md`, `docs/architecture-and-decisions.md`, `scripts/check.sh`, `config.example.yaml` | xend-onchain/apps/mm (Lacunas do dossiê) |
+| 2026-11-10 | O plugin `golang-skills` 1.8.0 (20 skills `go-*`) está instalado no escopo de projeto do `xend-onchain` (`~/.claude/plugins/installed_plugins.json`); o catálogo `skills-avaliacao` não tem nada de Go | [[Avaliação do catálogo skills-avaliacao]] |

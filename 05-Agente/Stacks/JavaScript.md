@@ -3,7 +3,7 @@ tipo: stack
 status: em-construção
 tags: [devagent, stack, javascript]
 criado: 2026-11-08
-atualizado: 2026-11-08
+atualizado: 2026-11-10
 relacionados: ["[[Stacks]]", "[[TypeScript]]", "[[Tarefas transversais]]"]
 ---
 # JavaScript
@@ -24,7 +24,7 @@ Recorte desta nota: runtime (Node/Bun), ESM, gerenciadores de pacote e lockfiles
 ## Skills
 | skill | origem | serve para | estado | testado em |
 |---|---|---|---|---|
-| `turborepo` | skill instalada (também em `.agents/skills/` do xend-platform) | `turbo.json`, pipelines, cache, `--filter`/`--affected` | candidata | — |
+| `turborepo` | catálogo `skills-avaliacao` (também em `.agents/skills/` de hedglobal e baas-api) | `turbo.json`, pipelines, cache, `--filter`/`--affected` (P2; 914 linhas, pesada para modelo barato) | candidata | — |
 
 ## Documentação
 - [MDN — JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -66,3 +66,4 @@ Recorte desta nota: runtime (Node/Bun), ESM, gerenciadores de pacote e lockfiles
 | 2026-11-08 | `package.json` da raiz do util tem só `supabase` e `viem`, sem uso nos comandos documentados | util/package.json:3-4 |
 | 2026-11-08 | JS fora do workspace no xend-baas-api: `baas-console` (Express, `node --test tests/*.test.js`) e `pix-poc` (sem dependências); o workspace é só `apps/*` | xend-baas-api/pnpm-workspace.yaml:7-8; xend-baas-api/baas-console/package.json:10-11; xend-baas-api/pix-poc/package.json:1-9 |
 | 2026-11-08 | Versões divergentes de Clerk entre workspaces do baas-api (`@clerk/nextjs ^6`, `@clerk/backend ^3`) | xend-baas-api/apps/portal/package.json:16; xend-baas-api/baas-console/package.json:14 |
+| 2026-11-10 | `turborepo` não está instalada globalmente (só no catálogo e nos repos) | [[Avaliação do catálogo skills-avaliacao]] |

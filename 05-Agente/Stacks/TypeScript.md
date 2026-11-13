@@ -3,7 +3,7 @@ tipo: stack
 status: em-construção
 tags: [devagent, stack, typescript]
 criado: 2026-11-08
-atualizado: 2026-11-08
+atualizado: 2026-11-10
 relacionados: ["[[Stacks]]", "[[JavaScript]]", "[[Next.js]]", "[[Tarefas transversais]]"]
 ---
 # TypeScript
@@ -26,8 +26,10 @@ Recorte desta nota: linguagem, `tsconfig`, typecheck, testes, lint e formataçã
 | skill | origem | serve para | estado | testado em |
 |---|---|---|---|---|
 | `aws-sdk-js-v3-usage` | plugin AWS (instalado) | código com `@aws-sdk/*` | candidata | — |
-| `type-fest` | skill instalada (também em `.agents/skills/` do xend-platform) | tipos utilitários TS | candidata | — |
-| `trigger-setup` · `trigger-config` · `trigger-tasks` · `trigger-agents` · `trigger-realtime` | skills instaladas (também em `.agents/skills/` do xend-platform) | tasks em Trigger.dev (SDK TS) | candidata | — |
+| `type-fest` | catálogo `skills-avaliacao` (também em `.agents/skills/` de hedglobal e baas-api) | tipos utilitários TS (P2) | candidata | — |
+| `trigger-setup` · `trigger-config` · `trigger-tasks` · `trigger-agents` · `trigger-realtime` | catálogo `skills-avaliacao` (também em `.agents/skills/` de hedglobal e baas-api) | tasks em Trigger.dev (SDK TS) (P2) | candidata | — |
+| `ai-sdk` | catálogo `skills-avaliacao` (também em `.agents/skills/` dos repos) | AI SDK: `generateText`, `streamText`, tools, agentes (P2; manda checar docs e IDs de modelo atuais) | candidata | — |
+| `resend` · `react-email` · `email-best-practices` | catálogo `skills-avaliacao` (também em `.agents/skills/` de hedglobal e baas-api); autor Resend | envio de e-mail e templates React Email (P2, só repos que enviam e-mail) | candidata | — |
 
 ## Documentação
 - [TypeScript — documentação](https://www.typescriptlang.org/docs/)
@@ -70,3 +72,5 @@ Recorte desta nota: linguagem, `tsconfig`, typecheck, testes, lint e formataçã
 | 2026-11-08 | Candidatas a regra (declaradas só no xend-platform): Zod em todas as fronteiras, `import type`, exports nomeados sem barrel files. O próprio `biome.jsonc` desliga `noBarrelFile` | xend-platform/AGENTS.md:50,76-77,89; xend-platform/biome.jsonc:36 |
 | 2026-11-08 | Zod 4 na maioria dos repos, mas 3.x em `design-ingest` e no server do openterminal | xend-onchain/packages/design-ingest/package.json:31; openterminal/server/package.json:18; xend-onchain/apps/dashboard/package.json:47 |
 | 2026-11-08 | Regras do ESLint rebaixadas para `warn` ("Deferred… Revisit as a dedicated cleanup"), em tensão com a proibição de supressão do portfólio | xend-onchain/apps/dashboard/eslint.config.mjs:8-16 |
+| 2026-11-10 | Triagem do catálogo: `type-fest` e `trigger-*` não estão instaladas globalmente (só no catálogo e nos repos); entram `resend`/`react-email`/`email-best-practices`; `ai-sdk` do catálogo descartada em favor de `vercel:ai-sdk` | [[Avaliação do catálogo skills-avaliacao]] |
+| 2026-11-10 | Com o plugin Vercel desconsiderado (DEC-2026-11-10-09), `ai-sdk` do catálogo volta a ser candidata (P2) no lugar de `vercel:ai-sdk` | [[Avaliação do catálogo skills-avaliacao]] |

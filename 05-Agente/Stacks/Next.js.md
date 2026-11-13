@@ -3,7 +3,7 @@ tipo: stack
 status: em-construção
 tags: [devagent, stack, nextjs]
 criado: 2026-11-08
-atualizado: 2026-11-08
+atualizado: 2026-11-10
 relacionados: ["[[Stacks]]", "[[TypeScript]]", "[[Tarefas transversais]]"]
 ---
 # Next.js
@@ -21,18 +21,21 @@ relacionados: ["[[Stacks]]", "[[TypeScript]]", "[[Tarefas transversais]]"]
 - Armadilha: `next dev` pode reescrever um bloco no `AGENTS.md`/`CLAUDE.md` do app. Desligue com `agentRules: false` no `next.config.ts` ou não commite o diff gerado.
 
 ## Skills
-Instaladas no plugin Vercel desta máquina; nenhuma testada ainda.
+As do plugin Vercel (`vercel:*`) foram descartadas pela DEC-2026-11-10-09; seguem só as skills do catálogo/repos. Nenhuma testada ainda.
 
 | skill | origem | serve para | estado | testado em |
 |---|---|---|---|---|
-| `vercel:nextjs` | plugin Vercel | App Router, rotas, Server Components | candidata | — |
-| `vercel:react-best-practices` | plugin Vercel | revisão de React/TSX | candidata | — |
-| `vercel:next-cache-components` | plugin Vercel | cache em Next 16 | candidata | — |
-| `vercel:shadcn` | plugin Vercel | UI com shadcn/ui | candidata | — |
-| `vercel:next-upgrade` | plugin Vercel | atualização de versão | candidata | — |
+| `vercel:nextjs` | plugin Vercel | App Router, rotas, Server Components | descartada (DEC-2026-11-10-09: plugin Vercel desconsiderado) | — |
+| `vercel:react-best-practices` | plugin Vercel | revisão de React/TSX | descartada (DEC-2026-11-10-09: plugin Vercel desconsiderado) | — |
+| `vercel:next-cache-components` | plugin Vercel | cache em Next 16 | descartada (DEC-2026-11-10-09: plugin Vercel desconsiderado) | — |
+| `vercel:shadcn` | plugin Vercel | UI com shadcn/ui | descartada (DEC-2026-11-10-09: plugin Vercel desconsiderado) | — |
+| `vercel:next-upgrade` | plugin Vercel | atualização de versão | descartada (DEC-2026-11-10-09: plugin Vercel desconsiderado) | — |
 | `next-best-practices` | `.agents/skills/` do xend-platform | boas práticas de Next | candidata | — |
-| `vercel-react-best-practices` | `.agents/skills/` do xend-platform | performance/padrões React | candidata | — |
-| `agent-browser` | `.agents/skills/` do xend-platform | automação de browser (verificar UI/e2e) | candidata | — |
+| `vercel-react-best-practices` | `.agents/skills/` do xend-platform | performance/padrões React (P1; sem A/B, DEC-2026-11-10-09) | candidata | — |
+| `agent-browser` | `.agents/skills/` do xend-platform | automação de browser (verificar UI/e2e) (**P1**) | em-teste | claude-code |
+| `vercel-composition-patterns` | catálogo `skills-avaliacao` (Vercel) | refactor de componentes com muitas props booleanas (P2) | candidata | — |
+| `nextjs-app-router-patterns` | catálogo `skills-avaliacao` | App Router genérico, Next 14+ (P3; sobrepõe `next-best-practices`) | candidata | — |
+| `before-and-after` | catálogo `skills-avaliacao` (Vercel) | screenshots antes/depois para PR (P3) | candidata | — |
 
 ## Documentação
 - [Next.js](https://nextjs.org/docs)
@@ -81,3 +84,6 @@ Instaladas no plugin Vercel desta máquina; nenhuma testada ainda.
 | 2026-11-08 | Proxy do web para anexar chave de API no servidor (`app/api/[...path]/route.ts`) evita expor a chave ao browser | openterminal/web/next.config.ts:3-5 |
 | 2026-11-08 | CI do RFQ: `npm ci`, typecheck, lint, test, build (sequência candidata a "antes do PR") | XEND-RFQ-PORTAL/.github/workflows/ci.yml:29-41 |
 | 2026-11-08 | `ui:bump` do xend-platform chama scripts inexistentes (`ui:shadcn:update`/`ui:shadcn:radix`; existem `ui:update`/`ui:radix`) | xend-platform/package.json:18; xend-platform/packages/ui/package.json:10-11 |
+| 2026-11-10 | `vercel-react-best-practices` (catálogo) e `vercel:react-best-practices` (plugin) têm conteúdo diferente: fazer A/B e ficar com uma (P1) | [[Avaliação do catálogo skills-avaliacao]] |
+| 2026-11-10 | Plugin Vercel desconsiderado como fonte de skills (DEC-2026-11-10-09): o A/B com `vercel:react-best-practices` foi cancelado; fica `vercel-react-best-practices` | [[Avaliação do catálogo skills-avaliacao]] |
+| 2026-11-10 | A/B no Haiku em xend.exchange: sem a skill, o screenshot de página inteira saiu com as seções em branco (conteúdo que aparece com a rolagem) e o agente não percebeu; com a skill, ele rolou e capturou de novo. Mesmo custo (~77k tokens). Regra candidata ao Contexto: conferir o screenshot antes de reportar. CLI `agent-browser` 0.39.4 instalado (DEC-2026-11-10-11) | [[Teste de skills - supabase-postgres e agent-browser 2026-11-10]] |

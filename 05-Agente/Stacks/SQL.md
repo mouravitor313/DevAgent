@@ -3,7 +3,7 @@ tipo: stack
 status: em-construção
 tags: [devagent, stack, sql]
 criado: 2026-11-08
-atualizado: 2026-11-08
+atualizado: 2026-11-10
 relacionados: ["[[Stacks]]", "[[Tarefas transversais]]"]
 ---
 # SQL
@@ -24,8 +24,9 @@ relacionados: ["[[Stacks]]", "[[Tarefas transversais]]"]
 | skill | origem | serve para | estado | testado em |
 |---|---|---|---|---|
 | `data:sql-queries` · `data:write-query` | plugin data (instalado) | escrever e otimizar consultas | candidata | — |
-| `supabase/agent-skills` | [Supabase](https://supabase.com/docs/guides/getting-started/ai-skills.md) (`npx skills add`) | desenvolvimento e segurança com Supabase | candidata | — |
-| `supabase-postgres-best-practices` | já presente em `.agents/skills/` do xend-platform; também instalada | schema, migrações, RLS, índices e consultas em Postgres | candidata | — |
+| `supabase` (`supabase/agent-skills`) | [Supabase](https://supabase.com/docs/guides/getting-started/ai-skills.md); cópia v0.1.2 já no catálogo `skills-avaliacao` | desenvolvimento e segurança com Supabase (P2) | candidata | — |
+| `supabase-postgres-best-practices` | catálogo `skills-avaliacao` e `.agents/skills/` dos repos (não instalada globalmente) | schema, migrações, RLS, índices e consultas em Postgres (**P1**) | em-teste | claude-code |
+| `anthropic-skills:query-validation` · `anthropic-skills:schema-mapper` | instaladas (sincronizadas) | revisar SQL; mapear schema desconhecido | candidata | — |
 
 ## Documentação
 - [PostgreSQL](https://www.postgresql.org/docs/)
@@ -76,3 +77,5 @@ relacionados: ["[[Stacks]]", "[[Tarefas transversais]]"]
 | 2026-11-08 | SQLite em `DATA_DIR` com volume Docker; `data/*.db*` ignorados no git; teste de banco em `server/src/db.test.ts`. | openterminal/docker-compose.yml:16,22; openterminal/.gitignore:11-13 |
 | 2026-11-08 | Nenhum linter ou formatador de SQL (ex.: sqlfluff) aparece nos dossiês; "lint" de SQL não tem comando. | (ausência; dossiês de SQL) |
 | 2026-11-08 | (advisor) dash-mm também é consumidor de Postgres: lê direto, via `pg`, o banco do indexer `uniswap_v3_indexer`, cujo schema é externo ao repo; não tem migração. Ficou fora do mapa inicial do plano. | dash-mm/package.json:22; dash-mm/README.md:38-39 |
+| 2026-11-10 | O `supabase/agent-skills` já está no catálogo (não precisa de `npx`); `query-validation` e `schema-mapper` do catálogo são duplicatas das `anthropic-skills:*` | [[Avaliação do catálogo skills-avaliacao]] |
+| 2026-11-10 | A/B no Haiku revisando as migrations do XEND-RFQ-PORTAL: `supabase-postgres-best-practices` teve a mesma cobertura do braço sem skill, com citação de regras e +10% de tokens; falta testar a escrita de migration. Achados reais no repo: segredo do TWAP em `cron.job.command` (`supabase/migrations/20260625130100_twap_cron.sql:60-75`), `profiles.fee_bps` legível pelo cliente (`20260622120000_init.sql:65`), `is_admin(uuid)` permite descobrir quem é admin | [[Teste de skills - supabase-postgres e agent-browser 2026-11-10]] |

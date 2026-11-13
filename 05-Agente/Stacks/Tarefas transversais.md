@@ -3,7 +3,7 @@ tipo: stack
 status: a-ler
 tags: [devagent, stacks, tarefas, git]
 criado: 2026-11-08
-atualizado: 2026-11-08
+atualizado: 2026-11-10
 relacionados: ["[[Stacks]]", "[[Kickoff]]", "[[Roadmap]]"]
 ---
 # Tarefas transversais
@@ -23,7 +23,7 @@ Tarefas iniciais do agente (DEC-2026-11-08-22), independentes de stack. Mesmo fo
 | specs | `product-management:write-spec` | plugin product-management | candidata | — |
 | refactor | `simplify` · `engineering:tech-debt` | instaladas | candidata | — |
 | workflow | `engineering:standup` · `loop` | instaladas | candidata | — |
-| Git/GitHub | *(sem skill; avaliar `_catalogo.json` em `~\.agents\skills-avaliacao\`)* | — | — | — |
+| Git/GitHub | *(sem skill: o catálogo não tem nenhuma; pista: plugin `github-dev` em cache)* | — | — | — |
 
 ## Documentação
 - [GitHub CLI](https://cli.github.com/manual/)
@@ -37,3 +37,5 @@ Tarefas iniciais do agente (DEC-2026-11-08-22), independentes de stack. Mesmo fo
 ## Achados
 | data | achado | fonte |
 |---|---|---|
+| 2026-11-10 | Catálogo `skills-avaliacao` triado: só `tlc-spec-driven` entra como transversal (specs); nada para Git/GitHub nem para testes genéricos; `fullstack-dev-skills` (escopo `xend-onchain`) ainda não avaliado | [[Avaliação do catálogo skills-avaliacao]] |
+| 2026-11-10 | `tlc-spec-driven` descartada (DEC-2026-11-10-08); specs ficam só com `product-management:write-spec` | [[Avaliação do catálogo skills-avaliacao]] |
